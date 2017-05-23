@@ -1,0 +1,219 @@
+/*
+Theme Name: sundays
+Description: Used to style the TinyMCE editor.
+*/
+
+@import "base";
+
+header {
+    background-color: $colorh;
+    color: $colorw;
+    padding-bottom: 0.7em;
+    nav {
+        background-color: $colorh;
+        .container-fluid {
+            background-color: $colorh;
+            }
+        #myNavbar {
+            background-color: $colorh;
+            li {
+                color: $colorw;
+                font-family: 'PT Sans', sans-serif;
+            }
+            a,
+            a:hover {
+                color: $colorw;
+                font-family: 'PT Sans', sans-serif;
+                background-color: $colorh;
+            }
+        }
+    }
+    h1 {
+        @include titre;
+        text-transform: uppercase;
+        padding: 0.5em;
+    }
+    h2 {
+        @include titre;
+    }
+    p {
+        text-align: center;
+        margin: 1em;
+        a,
+        a:hover {
+            background-color: #a28f61;
+            color: $colorw;
+            text-transform: uppercase;
+            margin: 0.5em;
+            padding: 0.8em;
+            border-radius: 0.4em;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 0.7em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+    p:last-child {
+        text-align: right;
+        margin-right: 2em;
+    }
+}
+nav {
+    .i, a, a:hover {
+        text-align: right;
+        margin: 1em;
+        @include nodecoration;
+    }
+    h3 {
+        font-family: 'Lora', serif;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        section {
+            box-shadow: 5px 5px 12px #555;
+            margin: 1em;
+            padding-right: 0;
+            padding-left: 0;
+            a,
+            a:hover {
+                @include nodecoration;
+                img {
+                    align-self: center;
+                }
+                .onsale {
+                    @include titrearticle ($coloronsale)
+                }
+                .buy {
+                    @include titrearticle ($colorbuy)
+                }
+                .sold {
+                    @include titrearticle ($colorsoldout)
+                }
+                .price {
+                    font-weight: bold;
+                }
+                p {
+                    margin: 0 0.5em;
+                }
+            }
+        }
+    }
+    #produit {
+        img {
+            margin: 1em auto;
+            width: 90%;
+        }
+        figure {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                width: 45%
+            }
+        }
+        p {
+            padding: 1em;
+            text-align: justify;
+            span {
+                font-weight: bold;
+                text-align: right;
+                font-size: 1.3em;
+            }
+            button {
+                margin-left: 2em;
+            }
+        }
+    }
+    .table-responsive {
+        margin: 2em auto;
+    }
+}
+main {
+    width: 100%;
+    form.form-group {
+        textarea:nth-child(5) {
+            width: 100%;
+        }
+        #submit {
+            margin: 1em;
+        }
+    }
+}
+footer {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0f3e57;
+    color: $colorw;
+    font-family: 'Lora', serif;
+    section {
+        width: 40%;
+        margin: 1em;
+        h5 {
+            font-weight: bold;
+            margin-top: 1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (min-width:970px) {
+    header {
+        height: 40em;
+        ul {
+            text-align: center;
+        }
+        h1 {
+            margin-top: 5em;
+        }
+        h2 {
+            max-width: 8em;
+            margin:auto;
+        }
+        a {
+            margin: 1em;
+            padding: 0 1em;
+        }
+        p:last-child {
+            text-align: right;
+            margin-right: 2em;
+        }
+    }
+    nav {
+        #produit {
+            figure {
+                img {
+                    width: 24%;
+                }
+            }
+            p {
+                span {
+                    font-weight: bold;
+                    text-align: right;
+                    font-size: 2em;
+                }
+                button {
+                    margin: 0 7em;
+                }
+            }
+        }
+    }
+    footer {
+        flex-wrap: nowrap;
+        section {
+            width: 23%;
+            i {
+                margin-right: 0.7em;
+            }
+        }
+    }
+}

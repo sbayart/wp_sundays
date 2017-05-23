@@ -1,0 +1,180 @@
+/*
+Theme Name: sundays
+Description: Used to style the TinyMCE editor.
+*/
+header {
+  background-color: #281400;
+  color: #f8ffff;
+  padding-bottom: 0.7em; }
+  header nav {
+    background-color: #281400; }
+    header nav .container-fluid {
+      background-color: #281400; }
+    header nav #myNavbar {
+      background-color: #281400; }
+      header nav #myNavbar li {
+        color: #f8ffff;
+        font-family: 'PT Sans', sans-serif; }
+      header nav #myNavbar a,
+      header nav #myNavbar a:hover {
+        color: #f8ffff;
+        font-family: 'PT Sans', sans-serif;
+        background-color: #281400; }
+  header h1 {
+    text-align: center;
+    margin: 0.8em;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    padding: 0.5em; }
+  header h2 {
+    text-align: center;
+    margin: 0.8em;
+    font-weight: bold;
+    font-family: 'Lora', serif; }
+  header p {
+    text-align: center;
+    margin: 1em; }
+    header p a,
+    header p a:hover {
+      background-color: #a28f61;
+      color: #f8ffff;
+      text-transform: uppercase;
+      margin: 0.5em;
+      padding: 0.8em;
+      border-radius: 0.4em;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 0.7em;
+      text-decoration: none;
+      font-weight: bold; }
+  header p:last-child {
+    text-align: right;
+    margin-right: 2em; }
+
+nav .i, nav a, nav a:hover {
+  text-align: right;
+  margin: 1em;
+  text-decoration: none;
+  color: inherit; }
+nav h3 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+nav article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  nav article section {
+    box-shadow: 5px 5px 12px #555;
+    margin: 1em;
+    padding-right: 0;
+    padding-left: 0; }
+    nav article section a,
+    nav article section a:hover {
+      text-decoration: none;
+      color: inherit; }
+      nav article section a img,
+      nav article section a:hover img {
+        align-self: center; }
+      nav article section a .onsale,
+      nav article section a:hover .onsale {
+        text-transform: uppercase;
+        margin: 0.5em;
+        color: #ffcc00; }
+      nav article section a .buy,
+      nav article section a:hover .buy {
+        text-transform: uppercase;
+        margin: 0.5em;
+        color: #dca461; }
+      nav article section a .sold,
+      nav article section a:hover .sold {
+        text-transform: uppercase;
+        margin: 0.5em;
+        color: #8d9198; }
+      nav article section a .price,
+      nav article section a:hover .price {
+        font-weight: bold; }
+      nav article section a p,
+      nav article section a:hover p {
+        margin: 0 0.5em; }
+nav #produit img {
+  margin: 1em auto;
+  width: 90%; }
+nav #produit figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  nav #produit figure img {
+    width: 45%; }
+nav #produit p {
+  padding: 1em;
+  text-align: justify; }
+  nav #produit p span {
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.3em; }
+  nav #produit p button {
+    margin-left: 2em; }
+nav .table-responsive {
+  margin: 2em auto; }
+
+main {
+  width: 100%; }
+  main form.form-group textarea:nth-child(5) {
+    width: 100%; }
+  main form.form-group #submit {
+    margin: 1em; }
+
+footer {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0f3e57;
+  color: #f8ffff;
+  font-family: 'Lora', serif; }
+  footer section {
+    width: 40%;
+    margin: 1em; }
+    footer section h5 {
+      font-weight: bold;
+      margin-top: 1em; }
+    footer section ul {
+      list-style: none;
+      padding: 0; }
+
+@media screen and (min-width: 970px) {
+  header {
+    height: 40em; }
+    header ul {
+      text-align: center; }
+    header h1 {
+      margin-top: 5em; }
+    header h2 {
+      max-width: 8em;
+      margin: auto; }
+    header a {
+      margin: 1em;
+      padding: 0 1em; }
+    header p:last-child {
+      text-align: right;
+      margin-right: 2em; }
+
+  nav #produit figure img {
+    width: 24%; }
+  nav #produit p span {
+    font-weight: bold;
+    text-align: right;
+    font-size: 2em; }
+  nav #produit p button {
+    margin: 0 7em; }
+
+  footer {
+    flex-wrap: nowrap; }
+    footer section {
+      width: 23%; }
+      footer section i {
+        margin-right: 0.7em; } }
+
+/*# sourceMappingURL=style.css.map */
