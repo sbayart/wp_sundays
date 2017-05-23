@@ -32,8 +32,9 @@
     </section>
 </footer>
 </div>
-<!-- <script src="static/external/jquery/dist/jquery.min.js"></script> -->
-<?php wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . 'jquery/dist/jquery.min.js', array( 'jquery' ), null, true );
- wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, true );?>
+
+<script src=<?php echo '"'.get_stylesheet_directory_uri().'/static/external/jquery/dist/jquery.min.js', array( 'jquery' ), null, true ; ?>></script>
+<script src=<?php echo '"'.get_stylesheet_directory_uri().'/static/external/bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, true ; ?>></script>
+
 </body>
 </html>

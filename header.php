@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sundays</title>
-    <?php wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . 'bootstrap/dist/css/bootstrap.min.css' );
-    wp_enqueue_style( 'bootstrap-theme', get_stylesheet_directory_uri() . 'bootstrap/dist/css/bootstrap-theme.min.css' );
-    wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . 'font-awesome/css/font-awesome.min.css' );
-    ?>
 
-    <!-- <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="static/external/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href=<?php echo '"'.get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap.min.css"';?>>
+    <link rel="stylesheet" href=<?php echo '"'.get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap-theme.min.css"';?>>
+    <link rel="stylesheet" href=<?php echo '"'.get_stylesheet_directory_uri() . '/static/external/font-awesome/css/font-awesome.min.css"'; ?>>
+
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
