@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+/*Template Name: Blog
+*/
+get_header(); ?>
 <nav>
     <h3>Notre blog</h3>
     <article>
@@ -11,7 +14,6 @@
                     setup_postdata( $post );?>
                         <section>
                             <a href="<?php the_permalink(); ?>">
-                            <?php get_template_part( 'template-parts/content' ); ?>
                             <p><?php echo the_title();?></p>
                             <p><?php echo the_post_thumbnail();?> </p>
                         </section>

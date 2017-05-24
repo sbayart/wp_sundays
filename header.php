@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sundays</title>
 
-    <link rel="stylesheet" href=<?php echo '"'.get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap.min.css"';?>>
-    <link rel="stylesheet" href=<?php echo '"'.get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap-theme.min.css"';?>>
-    <link rel="stylesheet" href=<?php echo '"'.get_stylesheet_directory_uri() . '/static/external/font-awesome/css/font-awesome.min.css"'; ?>>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap.min.css';?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap-theme.min.css';?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/font-awesome/css/font-awesome.min.css'; ?>">
 
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -17,6 +17,7 @@
 <body>
     <div class="container">
         <header>
+
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -28,15 +29,14 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <p class="navbar-text navbar-right"><a href="#" class="navbar-link"><i class="fa fa-search" aria-hidden="true"></i></a></p>
-                        <ul class="nav nav-pills nav-justified">
-                            <li class="active"><a href="#">Catalog</a></li>
-                            <li><a href="produit.html">About Us</a></li>
-                            <li><a href="panier.html">Stores</a></li>
-                            <li><a href="contact.html">Blog</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu() ?>
                     </div>
                 </div>
             </nav>
+
+
+
             <h1>Sundays</h1>
             <h2>We craft ocean friendly apparel</h2>
             <p><a href="#">Browse our products</a></p>

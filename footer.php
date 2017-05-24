@@ -33,8 +33,8 @@
 </footer>
 </div>
 
-<script src=<?php echo '"'.get_stylesheet_directory_uri().'/static/external/jquery/dist/jquery.min.js', array( 'jquery' ), null, true ; ?>></script>
-<script src=<?php echo '"'.get_stylesheet_directory_uri().'/static/external/bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, true ; ?>></script>
+<script src="<?php echo get_stylesheet_directory_uri().'/static/external/jquery/dist/jquery.min.js' ; ?>"></script>
+<script src="<?php echo get_stylesheet_directory_uri().'/static/external/bootstrap/dist/js/bootstrap.min.js'; ?>"></script>
 
 </body>
 </html>

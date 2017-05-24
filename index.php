@@ -2,6 +2,7 @@
 
 <nav>
     <h3>Spring Summer 2017</h3>
+
     <article>
         <?php   $args = array(
                         'category_name' => 'catalogue',

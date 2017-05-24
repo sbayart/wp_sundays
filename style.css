@@ -10,13 +10,17 @@ header {
     background-color: #281400; }
     header nav .container-fluid {
       background-color: #281400; }
-    header nav #myNavbar {
+    header nav #menu-mymenu {
       background-color: #281400; }
-      header nav #myNavbar li {
+      header nav #menu-mymenu li {
+        font-size: 1.5em;
+        display: block;
+        list-style: none;
         color: #f8ffff;
         font-family: 'PT Sans', sans-serif; }
-      header nav #myNavbar a,
-      header nav #myNavbar a:hover {
+      header nav #menu-mymenu a,
+      header nav #menu-mymenu a:hover {
+        text-decoration: none;
         color: #f8ffff;
         font-family: 'PT Sans', sans-serif;
         background-color: #281400; }
@@ -147,8 +151,9 @@ footer {
 @media screen and (min-width: 970px) {
   header {
     height: 40em; }
-    header ul {
-      text-align: center; }
+    header nav #menu-mymenu li {
+      font-size: 2em;
+      display: inline-flex; }
     header h1 {
       margin-top: 5em; }
     header h2 {

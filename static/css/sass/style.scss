@@ -14,14 +14,18 @@ header {
         .container-fluid {
             background-color: $colorh;
             }
-        #myNavbar {
+        #menu-mymenu {
             background-color: $colorh;
             li {
+                font-size: 1.5em;
+                display: block;
+                list-style: none;
                 color: $colorw;
                 font-family: 'PT Sans', sans-serif;
             }
             a,
             a:hover {
+                text-decoration: none;
                 color: $colorw;
                 font-family: 'PT Sans', sans-serif;
                 background-color: $colorh;
@@ -169,8 +173,14 @@ footer {
 @media screen and (min-width:970px) {
     header {
         height: 40em;
-        ul {
-            text-align: center;
+        nav {
+            #menu-mymenu {
+                // text-align: center;
+                li {
+                    font-size: 2em;
+                    display: inline-flex;
+                }
+            }
         }
         h1 {
             margin-top: 5em;
