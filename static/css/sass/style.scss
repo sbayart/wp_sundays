@@ -85,13 +85,13 @@ nav {
                 img {
                     align-self: center;
                 }
-                .onsale {
+                .on-sale {
                     @include titrearticle ($coloronsale)
                 }
                 .buy {
                     @include titrearticle ($colorbuy)
                 }
-                .sold {
+                .sold-out {
                     @include titrearticle ($colorsoldout)
                 }
                 .price {

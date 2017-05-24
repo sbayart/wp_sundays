@@ -77,8 +77,8 @@ nav article {
       nav article section a img,
       nav article section a:hover img {
         align-self: center; }
-      nav article section a .onsale,
-      nav article section a:hover .onsale {
+      nav article section a .on-sale,
+      nav article section a:hover .on-sale {
         text-transform: uppercase;
         margin: 0.5em;
         color: #ffcc00; }
@@ -87,8 +87,8 @@ nav article {
         text-transform: uppercase;
         margin: 0.5em;
         color: #dca461; }
-      nav article section a .sold,
-      nav article section a:hover .sold {
+      nav article section a .sold-out,
+      nav article section a:hover .sold-out {
         text-transform: uppercase;
         margin: 0.5em;
         color: #8d9198; }
