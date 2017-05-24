@@ -18,9 +18,17 @@
     <section>
         <h5>Newsletter</h5>
         <div class="input-group">
-<input type="text" class="form-control" placeholder="Your email..." aria-describedby="basic-addon2">
-<span class="input-group-addon" id="basic-addon2">OK</span>
-</div>
+            <form method="post">
+                <input type="email" name="email" class="form-control" placeholder="Your email..." aria-describedby="basic-addon2">
+                <?php
+                    if (isset($_POST['email'])) {
+                        $wpdb->insert( 'wp_emails',  array(   'email' => $_POST['email'])
+                                            // 'datetime' => the_date())
+                                        );
+                    } ?>
+                <button class="input-group-addon" id="basic-addon2" type="submit" name="button">OK</button>
+            </form>
+        </div>
     </section>
     <section>
         <h5>Follow us</h5>
